@@ -113,6 +113,7 @@ export default function Home() {
               <a
                 href="https://twitter.com/ImScholz"
                 target="_blank"
+                rel="noreferrer"
                 style={{ color: "#34d399", textDecoration: "underline" }}
               >
                 mi Twitter

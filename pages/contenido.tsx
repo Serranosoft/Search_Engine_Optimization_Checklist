@@ -48,6 +48,7 @@ function Contenido() {
               {Contenido_res.map((el) => {
                 return (
                   <Checkbox
+                    key={el.id}
                     el={el}
                     task={task}
                     handleTask={handleTask}

@@ -49,6 +49,7 @@ function Seo() {
               {SEO.map((el) => {
                 return (
                   <Checkbox
+                    key={el.id}
                     el={el}
                     task={task}
                     handleTask={handleTask}
