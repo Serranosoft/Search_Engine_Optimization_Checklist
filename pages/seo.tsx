@@ -5,6 +5,7 @@ import Checkbox from "../components/Checkbox";
 import LoadingBar from "../components/LoadingBar";
 import { removeAllChecks } from "../Utils/Utils";
 import Article from "../components/Article";
+import Head from "next/head"
 
 function seo() {
   const [task, handleTask] = useState<number>(0);
@@ -12,6 +13,16 @@ function seo() {
 
   return (
     <>
+      <Head>
+        <title>
+          Completa y comprueba todos los aspectos SEO de tu página web | SEOList.pro
+        </title>
+        <meta
+          name="description"
+          content="Comprueba y completa en formato «check» todos los aspectos SEO que debe tener tu página web"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <section className="row w-100 justify-content-evenly align-items-start py-5 mx-auto">
         <div className="col-12 col-md-7 d-flex flex-column">
           <div className="row d-flex justify-content-between">
@@ -51,11 +62,7 @@ function seo() {
 
         <div className="col-12 col-md-3 bg-white shadow rounded p-0 sticky">
           {SEOArticles.map((el) => {
-            return (
-              <Article
-                el={el}
-              />
-            )
+            return <Article el={el} />;
           })}
         </div>
       </section>

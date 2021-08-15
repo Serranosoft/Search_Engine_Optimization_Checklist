@@ -3,14 +3,25 @@ import Contenido from "../resources/Contenido";
 import Checkbox from "../components/Checkbox";
 import LoadingBar from "../components/LoadingBar";
 import { removeAllChecks } from "../Utils/Utils";
+import Head from "next/head";
 
 function seo() {
   const [task, handleTask] = useState<number>(0);
   const length = Contenido.length;
 
-
   return (
     <>
+      <Head>
+        <title>
+          Completa todos los aspectos SEO en el contenido y copywriting de tu página web |
+          SEOList.pro
+        </title>
+        <meta
+          name="description"
+          content="Comprueba y completa en formato «check» todos los aspectos de tu contenido en tu página web"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <section className="row w-100 justify-content-evenly py-5 mx-auto">
         <div className="col-12 col-md-7 d-flex flex-column">
           <div className="row d-flex justify-content-between">
