@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import Contenido from "../resources/Contenido";
+import Contenido_res from "../resources/Contenido";
 import Checkbox from "../components/Checkbox";
 import LoadingBar from "../components/LoadingBar";
 import { removeAllChecks } from "../Utils/Utils";
 import Head from "next/head";
 
-function seo() {
+function Contenido() {
   const [task, handleTask] = useState<number>(0);
-  const length = Contenido.length;
+  const length = Contenido_res.length;
 
   return (
     <>
@@ -45,7 +45,7 @@ function seo() {
           </div>
           <div className="row my-2">
             <div className="col-12 border bg-white shadow rounded">
-              {Contenido.map((el) => {
+              {Contenido_res.map((el) => {
                 return (
                   <Checkbox
                     el={el}
@@ -73,4 +73,4 @@ function seo() {
   );
 }
 
-export default seo;
+export default Contenido;

@@ -7,7 +7,7 @@ import { removeAllChecks } from "../Utils/Utils";
 import Article from "../components/Article";
 import Head from "next/head"
 
-function seo() {
+function Seo() {
   const [task, handleTask] = useState<number>(0);
   const length = SEO.length;
 
@@ -70,4 +70,4 @@ function seo() {
   );
 }
 
-export default seo;
+export default Seo;
