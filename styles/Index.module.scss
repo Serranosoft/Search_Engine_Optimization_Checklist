@@ -1,0 +1,125 @@
+#hero {
+  @media (max-width: 480px) {
+    text-align: center;
+  }
+}
+
+#heroTitle {
+  font-size: 52px;
+  line-height: 1.1;
+  @media (min-width: 992px) {
+    font-size: 80px;
+  }
+}
+
+#AboutMe {
+  width: 45%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 16px;
+  align-items: center;
+  margin: 40px auto 60px auto;
+  border: 1px solid gray;
+  border-radius: 15px;
+  padding: 16px 24px;
+  background-color: #192b2c;
+  & > div {
+    width: 100%;
+    margin: 0 auto;
+  }
+  & img {
+    width: 100%;
+    border-radius: 50%;
+    margin: 0 auto;
+    text-align: center;
+    @media (max-width: 768px) {
+      width: 40%;
+    }
+  }
+  & span {
+    font-size: 14px;
+    color: lightgray;
+    @media (max-width: 768px) {
+      text-align: center;
+      line-height: 1.45;
+    }
+  }
+  @media (max-width: 768px) {
+    width: 75%;
+    grid-template-columns: 1fr;
+    & > div {
+      display: flex;
+    }
+  }
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+}
+
+$text: #272727;
+$light-primary: #5eb6a3;
+$primary: #5aa796;
+$dark-primary: #264142;
+$primary-border: #192b2c;
+$primary-shadow: #e7e7e7;
+
+#CTA {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: 600;
+  color: $text;
+  text-transform: uppercase;
+  padding: 1.25em 2em;
+  background: $light-primary;
+  border: 2px solid $primary-border;
+  border-radius: 0.75em;
+  transform-style: preserve-3d;
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
+    background 150ms cubic-bezier(0, 0, 0.58, 1);
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $dark-primary;
+    border-radius: inherit;
+    box-shadow: 0 0 0 2px $primary-border, 0 0.625em 0 0 $primary-shadow;
+    transform: translate3d(0, 0.75em, -1em);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
+      box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+  }
+  &:hover {
+    background: $primary;
+    transform: translate(0, 0.25em);
+    &::before {
+      box-shadow: 0 0 0 2px $primary-border, 0 0.5em 0 0 $primary-shadow;
+      transform: translate3d(0, 0.5em, -1em);
+    }
+  }
+  &:active {
+    background: $primary;
+    transform: translate(0em, 0.75em);
+    &::before {
+      box-shadow: 0 0 0 2px $primary-border, 0 0 $primary-shadow;
+      transform: translate3d(0, 0, -1em);
+    }
+  }
+}
+@media (max-width: 480px) {
+  #CTA {
+    width: 80%;
+    padding: 8px 16px;
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,23 @@
+.taskBar {
+  border-radius: 30px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.taskBar span {
+  display: block;
+}
+
+.taskBarBg {
+  background-color: white;
+}
+
+.task {
+  background-color: #58b19f;
+  color: #fff;
+  padding: 12px 0;
+  width: 0%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+/*# sourceMappingURL=LoadingBar.module.css.map */

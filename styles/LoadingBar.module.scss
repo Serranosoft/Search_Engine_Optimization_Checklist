@@ -1,0 +1,21 @@
+// LOADING BAR
+.taskBar {
+  border-radius: 30px;
+  overflow: hidden;
+  width: 100%;
+  span {
+    display: block;
+  }
+}
+
+.taskBarBg {
+  background-color: white;
+}
+
+.task {
+  background-color: #58b19f;
+  color: #fff;
+  padding: 12px 0;
+  width: 0%;
+  transition: 0.2s;
+}

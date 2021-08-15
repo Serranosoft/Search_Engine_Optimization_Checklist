@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+}
+
+a {
+  color: inherit;
+  text-decoration: none !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-white {
+  background-color: #FFF !important;
+}
+
+.text-white {
+  color: #FFF !important;
+}
+
+.sticky {
+  position: sticky;
+  top: 30px;
+}
+
+
+/* BOOTSTRAP VARIABLES OVERWRITED */
+
+$primary: #272727;
+$secondary: #f7f5fa;
+$success: #28554b;
+$dark: #192b2c;
+$navbar-toggler: black;
+$font-family-sans-serif: "Rubik", sans-serif;
+
+@import "../node_modules/bootstrap/scss/bootstrap";

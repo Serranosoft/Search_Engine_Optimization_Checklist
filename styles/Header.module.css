@@ -1,0 +1,25 @@
+#logo-img {
+  width: 25px;
+}
+
+#navbarToggler {
+  border: 0;
+}
+
+#navbarToggler:focus {
+  border-radius: 30px;
+}
+
+#menu > li {
+  margin: 0 12px;
+}
+
+#menu > li a {
+  color: black;
+}
+
+#menu > li a:hover {
+  color: #58B19F;
+  text-decoration: underline;
+}
+/*# sourceMappingURL=Header.module.css.map */
