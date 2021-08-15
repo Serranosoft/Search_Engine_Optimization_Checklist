@@ -53,46 +53,42 @@ export default function Home() {
           <img src="images/seo.svg" className="w-50 mb-3 opacity-75" />
           <p className="fw-bold">SEO</p>
           <p className="text-center">
-            Indexación, sitemap, metadatos... <br />Comprueba todos los aspectos SEO de tu web
+            Comprueba todos los aspectos SEO de tu web
           </p>
         </div>
         <div className="col-4 col-md-2 d-flex flex-column align-items-center">
           <img src="images/contenido.svg" className="w-50 mb-3 opacity-75" />
           <p className="fw-bold">Contenido</p>
           <p className="text-center">
-            Sigue todos los checks y completa todos los retos para conseguir posicionar
+            Consigue posicionar tus artículos siguiendo las mejores pautas
           </p>
         </div>
         <div className="col-4 col-md-2 d-flex flex-column align-items-center">
           <img src="images/link.svg" className="w-50 mb-3 opacity-75" />
           <p className="fw-bold">Enlaces</p>
           <p className="text-center">
-            Asegurate de tener todas las comprobaciones SEO listas y preparadas
-            en tus webs
+            Completa cada uno de los checks para obtener backlinks fácilmente
           </p>
         </div>
         <div className="col-4 col-md-2 d-flex flex-column align-items-center">
-          <img src="images/adsense3.svg" className="w-50 mb-3 opacity-75" />
+          <img src="images/google.svg" className="w-50 mb-3 opacity-75" />
           <p className="fw-bold">Adsense</p>
           <p className="text-center">
-            Asegurate de tener todas las comprobaciones SEO listas y preparadas
-            en tus webs
+            Incrementa el RPM por anuncio en Adsense al completar los checks
           </p>
         </div>
         <div className="col-4 col-md-2 d-flex flex-column align-items-center">
           <img src="images/ecommerce.svg" className="w-50 mb-3 opacity-75" />
           <p className="fw-bold">Ecommerce</p>
           <p className="text-center">
-            Asegurate de tener todas las comprobaciones SEO listas y preparadas
-            en tus webs
+            Todos las pautas SEO que hay que tener en cuenta para un ecommerce
           </p>
         </div>
         <div className="col-4 col-md-2 d-flex flex-column align-items-center">
           <img src="images/metrics.svg" className="w-50 mb-3 opacity-75" />
           <p className="fw-bold">Métricas</p>
           <p className="text-center">
-            Asegurate de tener todas las comprobaciones SEO listas y preparadas
-            en tus webs
+            Checks para mejorar las métricas de Pagespeed Insights
           </p>
         </div>
       </div>
