@@ -63,7 +63,7 @@ function Seo() {
 
         <div className="col-12 col-md-3 bg-white shadow rounded p-0 sticky">
           {SEOArticles.map((el) => {
-            return <Article el={el} />;
+            return <Article key={el.id} el={el} />;
           })}
         </div>
       </section>
